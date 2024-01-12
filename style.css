@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#navbar{
+
+background:#F5EFE6;
+}
+
+#logo{
+    font-size: 32px;
+    font-weight: 700 ;
+    color:darkslategrey;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: black;
+
+
+}
+.navbar-nav{
+    margin-left: 20px;
+
+}
+.nav-item .nav-link{
+    font-size: 16px;
+     font-weight: 500;
+    color: black;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+   background: darkslategrey; 
+    color: white;
+}
+button{
+    background: darkslategrey !important
+
+}
+
+/* home page start  */
+.home{
+   width: 100%; 
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(t&&&t.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: black;
+    font-size: 36px;
+    font-weight: 500;
+
+}
+.home .content h5 span{
+    color: white;
+}
+.home .content h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+.changecontent::after{
+  content: "  ";  
+  color:white;
+  animation: changetext 10s infinite linear;
+
+}
+@keyframes  changetext{
+    0%{content:"Taj Mahal Agra";}
+    10%{content:"Victoria Memorial, Kolkata";}
+    20%{content:"Munnar kerala";}
+    30%{content:"Gateway of India Mumbai";}
+    40%{content:"Manali";}
+    50%{content:"Shimla";}
+    60%{content:"Leh Ladakh";}
+    70%{content:"Kedarnath Temple";}
+    80%{content:"Rajasthan";}
+    90%{content:"Statue Of unity Gujarat";}
+    100%{content:"Golden Temple Amritsar";}
+    
+
+}
+
+.home .content p{
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 39px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding:10px ;
+    background: white;
+    color:black ;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.home .content a:hover{
+    background-color: darkslategray;
+    color: black;
+}
+@media (max-width:450px){
+    .home{
+        background-position:50%;
+    }}
+
+@media(max-width:450px) {
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+    
+}
+/* home page end  */
+
+ /* section book start */
+.book{
+    background:#FFFBEB;
+    padding: 80px;
+    
+}
+.main-text h1{
+    text-align: center;
+    font-weight: 600;
+
+}
+.main-text h1 span{
+    color: darkslategrey ;
+
+}
+.book .card{
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top:30px ;
+
+}
+.book form input{
+   padding: 10px; 
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+.book .submit{
+   width: 160px;
+   font-size: 16px;
+   font-weight: 550;
+   background: darkslategray;
+   color: black;
+   margin-top: 10px;
+   transition: 0.5s; 
+
+}
+.book .submit:hover{
+    width:170px;
+
+}
+@media (max-width:765px){
+    
+    
+    .main-text h1{
+        margin-top: 20px;
+
+    }
+}
+
+
+
+
+
+
+ /* section book end  */
+
+ /* section packages start  */
+.main-text h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600px;
+
+
+}
+.main-text h1 span{
+    color: darkslategrey;
+
+
+}
+
+.packages .card{
+    border-radius: 25px;
+    border: none;
+    background:#F5EFE6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+.packages .card img{
+    height:250px;
+    border-radius: 20px;
+}
+
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.packages .card .card-body p{
+    font-size: 15px;
+
+}
+.checked{
+    color: darkslategrey;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: darkslategray;
+    color: black;
+    border-radius: 10px;
+}
+.packages{
+    background:#FFFBEB;
+}
+
+ /* section packages end */
+
+
+/* service section start */
+.services{
+    background:#FFFBEB;
+    
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1)0px,4px,12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: darkslategrey;
+    margin-top: 20px;
+    
+
+}
+.services .main-txt h1{
+    text-align: center ;
+    
+}
+.services .card .card h3{
+    font-weight: 600;
+    
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+
+
+/* service section end */
+
+/* section gallery start  */
+.Gallery{
+    text-align: center;
+    background:#FFFBEB;
+    
+}
+.gallery .card{
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.gallery .card img{
+    border-radius: 20px;
+    transition: 0.5s;
+    
+    
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+/* section gallery ends  */
+
+
+/* about starts  */
+
+
+.about{
+    padding: 50px;
+    
+    background:#FFFBEB;
+}
+.about .card{
+    border-radius: 10px;
+
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+/* Footer Start */
+#footer{
+    width: 100%;
+    
+    text-align: center;
+    background:#7895B2;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: darkslategrey;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background:darkslategrey;
+/* about ends  */   
